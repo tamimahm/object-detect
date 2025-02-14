@@ -8,7 +8,7 @@ import pandas as pd
 # Define the base directory where the patient folders are located
 base_dir = r"D:\Chicago_study\all_ARAT_videos"
 # Assuming the CSV has columns 'Patient_ID' and 'Activity_ID'
-csv_path = "missing_filenames.csv"  # Replace with the path to your CSV file
+csv_path = "D:/Tamim_deep_learning/ARAT_impairment/Segmentation/missing_filenames.csv"  # Replace with the path to your CSV file
 # Define the output directory for saving CSV files
 output_base_dir = r"D:\Tamim_deep_learning\ARAT_impairment\Segmentation\missing object files\data_res_trident\alternative\ipsilateral_0.85"
 
