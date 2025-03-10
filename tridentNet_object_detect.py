@@ -6,7 +6,7 @@ import os
 import pandas as pd
 
 # Define the base directory where the patient folders are located
-base_dir = r"D:\Chicago_study\all_ARAT_videos"
+base_dir = r"D:\all_ARAT_videos"
 # Assuming the CSV has columns 'Patient_ID' and 'Activity_ID'
 csv_path = "D:/Tamim_deep_learning/ARAT_impairment/Segmentation/missing_filenames.csv"  # Replace with the path to your CSV file
 # Define the output directory for saving CSV files
@@ -35,7 +35,8 @@ def find_video_path(patient_id, activity_id):
             
             # Check if the video is Impaired and matches the ipsi camera criteria
             if impairment_status == "Impaired":
-                if (arm_side == "right" and camera == "cam1") or (arm_side == "left" and camera == "cam4"):
+                #if (arm_side == "right" and camera == "cam1") or (arm_side == "left" and camera == "cam4"):
+                if (arm_side == "right" and camera == "cam3") or (arm_side == "left" and camera == "cam3"):
                     # Return the full path to the video
                     return os.path.join(patient_folder, filename)
     
